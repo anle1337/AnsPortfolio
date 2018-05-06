@@ -1,0 +1,17 @@
+<% if object.errors.any? %>
+	<div class = "error_explanation">
+		<ul class = "error_list">	
+			<% object.errors.full_messages.each do |msg| %>
+				<li> <%= msg %> </li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
+<% if flash[:success]%>
+	<div class = "error_explanation">
+		<ul class = "success_list">
+			<li> <%= flash[:success] %> </li>
+		</ul>
+	</div>
+<% end %>

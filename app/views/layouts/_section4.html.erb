@@ -1,0 +1,37 @@
+<div class="container-fluid section4">
+
+<div class="row">
+	<div class="col-md-12 header">
+		<h1> Contact </h1>
+	</div>
+</div>
+
+	<div class="row">
+
+		<div class="col-md-3 col-md-offset-1 contact_info">
+		<h3> Contact Information </h3>
+		<p> Email: An@asble@ucdavis.edu </p>
+		<p> Phone Number: (408) 475-8012 </p>
+		</div>
+
+		<div class="col-md-8">
+
+			<h4> Questions or comment? I'm available for freelance projects. Send me a message! I respond within an hour. </h4> <br>
+
+			<%= render partial: 'layouts/error_messages', locals: {object: @message} %>
+
+			<%= form_for :contacts, url: '/create#contact', method: :post, :html => {:id => "contact", target: "_self"}  do |f| %>
+				<%= f.label "Name" %><br>
+				<%= f.text_field "name" %> <br>
+
+				<%= f.label "Email" %><br>
+				<%= f.text_field "email" %> <br>
+				 <br>
+				<%= f.label "Message" %> <br>
+				<%= f.text_area "message", id: "contacts_message" %> <br>
+
+				<%= f.submit "Send Message", id: "contacts_submit" %>
+			<% end %>
+		</div>
+	</div>
+</div>

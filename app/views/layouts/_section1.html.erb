@@ -1,0 +1,35 @@
+<div class="container-fluid section1">
+
+	<%= render partial: 'layouts/navigation_bar' %>
+
+	<div class="row name header">
+		<div class="col-md-6 col-md-offset-3">
+			<h1> An Le </h1>
+		</div>
+	</div>
+
+	<div class="row description">
+		<div class="col-md-6 col-md-offset-3">
+			<p> Hello from the Bay Area! I am a Full Stack Developer with Rails as my choice of framework for building web apps.  My portfolio will showcase some awesome ruby code examples, APIs, and sick front-end animations. </p>
+
+			<p> If you have a web app that needs building, a project you'd like to collaborate on, questions to ask, or comments to share, feel free to contact me!
+		</div>
+	</div>
+
+	<div class="row picture">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="picture">
+				<%= image_tag "me1.jpg", alt: "My Picture Here", class: "picture" %>
+				<p> Email: An@asble@ucdavis.edu </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row social_media">
+		<div class="col-md-6 col-md-offset-3">
+			<% social_media_links.each do |media, url| %>
+				<a href="<%= url%>"><i class="fa fa-<%= media %> fa-3x"></i></a>
+			<% end %>
+		</div>
+	</div>
+</div>

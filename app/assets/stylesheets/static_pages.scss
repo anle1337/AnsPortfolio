@@ -1,0 +1,295 @@
+$twitter: #0084B4; /*rgba(0, 132, 180)*/
+$facebook: #43609C; /* rgba(67, 96, 156) */
+$linkedin: #1884BB; /* rgba(24, 132, 187) */
+$sec_3: #f5f5f5;
+
+
+
+.section1 {
+  height: 100%;
+  background-image: asset-url("SFSkyline1.jpg");
+  background-size: cover;
+  text-align: center;
+  h1 {
+    color: white;
+  }
+  .name {
+    color: white;
+    height: 15%;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .section1 {
+    height: 800px;
+  }
+
+}
+
+
+
+.navigation {
+  text-align: center;
+  margin: 25px 0px;
+  height: 5%;
+  li {
+    display: inline-block;
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+  nav {
+    border-bottom: solid white 1px;
+  }
+}
+
+
+.picture {
+  height: 30%;
+  border-radius: 100%;
+  p {
+    color: white;
+  }
+}
+
+
+.header{
+  text-align: center;
+  margin: 30px 0px;
+  h1 {
+    font-size: 50px;
+  }
+
+}
+
+.description {
+  color: white;
+  height: 22%;
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+
+.social_media {
+  color: white;
+  i {
+    margin-right: 10px;
+  }
+}
+
+.section2 {
+  /* Background pattern from subtlepatterns.com */
+  background-image: asset-url("back_pattern.png");
+}
+
+.project_bg {
+  border: solid 1px rgba(157, 157, 157, 0.25);
+  position: relative;
+  height: 100%;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  margin-bottom: 30px;
+}
+
+.project_links:hover, .project_links:visited, .project_links:link, .project_links:active  {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+
+.project {
+  visibility: hidden;
+  color: white;
+  position: relative;
+  text-align: center;
+  h3 {
+    color: $twitter;
+    padding-top: 10px !important;
+  }
+  p {
+    padding: 10px !important;
+    color: #eeeeee;
+  }
+
+}
+
+
+.img5 {
+  background-image: asset_url("site5.png") !important;
+}
+
+.img6 {
+  background-image: asset_url("site6.png") !important;
+}
+
+.img7 {
+  background-image: asset_url("site7.png") !important;
+}
+
+.img8 {
+  background-image: asset_url("site8.png") !important;
+}
+
+.img9 {
+  background-image: asset_url("site9.png") !important;
+}
+
+.section3 {
+  /* Background pattern from subtlepatterns.com */
+  background-image: asset-url('stardust.png');
+  color: $sec_3;
+  h1 {
+    display: inline-block;
+    padding: 1% 10%;
+    -webkit-box-shadow: 4px 3px 5px 1px rgba(0,0,0,1);
+      -moz-box-shadow: 4px 3px 5px 1px rgba(0,0,0,1);
+    box-shadow: 4px 3px 5px 1px rgba(0,0,0,1);
+    -webkit-transition: all 0.1s linear;
+      -o-transition: all 0.1s linear;
+      -moz-transition: all 0.1s linear;
+      -ms-transition: all 0.1s linear;
+      -kthtml-transition: all 0.1s linear;
+      transition: all 0.1s linear;
+  }
+  h1:hover {
+    -webkit-box-shadow: 6px 6px 7px 1px rgba(0,0,0,1);
+      -moz-box-shadow: 6px 6px 7px 1px rgba(0,0,0,1);
+    box-shadow: 6px 6px 7px 1px rgba(0,0,0,1);
+    -webkit-transition: all 0.1s linear;
+      -o-transition: all 0.1s linear;
+      -moz-transition: all 0.1s linear;
+      -ms-transition: all 0.1s linear;
+      -kthtml-transition: all 0.1s linear;
+      transition: all 0.1s linear;
+  }
+}
+
+.s3_description {
+  color: $sec_3;
+  h3 {
+    font-weight: 300;
+  }
+
+}
+
+.skillset {
+  color: $sec_3;
+  text-align: center;
+  h2 {
+    cursor: pointer;
+    padding: 5px 25px;
+    display: inline-block;
+    border-bottom: 1px solid
+    /*-webkit-box-shadow: 4px 3px 5px 1px rgba(0,0,0,1);
+      -moz-box-shadow: 4px 3px 5px 1px rgba(0,0,0,1);
+    box-shadow: 4px 3px 5px 1px rgba(0,0,0,1);
+      -o-transition: all 0.1s linear;
+      -moz-transition: all 0.1s linear;
+      -ms-transition: all 0.1s linear;
+      -kthtml-transition: all 0.1s linear;
+      transition: all 0.1s linear;*/
+  }
+  h2:hover {
+    border-bottom: 0px;
+    -webkit-box-shadow: 6px 6px 7px 1px rgba(0,0,0,1);
+      -moz-box-shadow: 6px 6px 7px 1px rgba(0,0,0,1);
+    box-shadow: 6px 6px 7px 1px rgba(0,0,0,1);
+    -webkit-transition: all 0.1s linear;
+      -o-transition: all 0.1s linear;
+      -moz-transition: all 0.1s linear;
+      -ms-transition: all 0.1s linear;
+      -kthtml-transition: all 0.1s linear;
+      transition: all 0.1s linear;
+  }
+  i {
+    position: relative;
+    left: 20px;
+
+  }
+}
+
+.skills {
+  color: $sec_3;
+  p {
+    margin: 0 0 5px;
+  }
+  .skills_ul {
+    display: inline-block;
+    li {
+      opacity: 0;
+      text-align: left;
+    }
+  }
+
+}
+
+.section4 {
+  height: 600px;
+  background-image: asset-url('diamond_upholstery.png');
+  #contacts_name, #contacts_email, #contacts_message {
+    width: 25%;
+    border-radius: 2px;
+      -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid black;
+
+  }
+  #contacts_name:focus, #contacts_email:focus, #contacts_message:focus {
+    box-shadow: 4px 4px 5px black;
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid black;
+  }
+  #contacts_message {
+    width: 50%;
+    height: 100px;
+  }
+}
+
+
+.contact_info {
+  h3 {
+    text-decoration: underline;
+  }
+}
+
+.fa-facebook {
+  color: $facebook;
+}
+
+.fa-twitter {
+  color: $twitter;
+}
+
+.fa-linkedin {
+  color: $linkedin;
+}
+
+.fa-github {
+  color: white;
+}
+
+
+.error_list {
+  li {
+    color: #a94442;
+  }
+}
+
+.success_list {
+  padding-left: 0px;
+  li {
+    color: #34AE3F;
+    list-style-type: none;
+  }
+}

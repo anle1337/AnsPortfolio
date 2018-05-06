@@ -1,0 +1,34 @@
+<div class="container-fluid section2">
+	<div class="row header">
+		<div class="col-md-6 col-md-offset-3">
+			<h1> Projects </h1>
+			<p> Programming has been incredibly fun for me. It's almost like a game. You gain experience from writing new code and learning new languages and frameworks. Once you level up, you can build something with those skills you've learned. </p>
+		</div>
+	</div>
+
+<% projects.each_with_index do |project, index|%>
+
+	<% if (index+1) % 3 == 1 %>
+		<div class="row">
+	<% end %>
+
+		<div class="col-md-4">
+			<a href = "<%=project[1]%>" class="project_links">
+				<div class="project_bg" style="background-image: url(<%= image_url("site#{index}")%>)">
+					<div class="project">
+							<h3> <%= project[0] %></h3>
+							<p> <%= project[2] %> </p>
+							<p> Summary: <%= project[3] %></p>
+				   </div>
+		    	</div>
+	    	</a>
+		</div>
+
+	<% if (index+1) % 3 == 0 %>
+		</div>
+	<% end %>
+
+<% end %>
+
+	</div>
+</div>
