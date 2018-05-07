@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 
 #sitemap generator for your website
 gem 'sitemap_generator'
+gem 'webpacker', '~> 3.5'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'#
