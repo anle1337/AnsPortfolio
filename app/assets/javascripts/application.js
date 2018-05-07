@@ -21,7 +21,7 @@ var ready = function() {
 
   $(".project_bg").each(function(index, element) {
 
-    var i = index + 5;
+    var i = index + 6;
 
     $(element).mouseenter(function() {
       $(element).fadeToggle(100, function() {

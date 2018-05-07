@@ -1,0 +1,16 @@
+.container-fluid.section2
+	.row.header
+		.col-md-6.col-md-offset-3
+		%h1 Projects
+		%p Programming has been incredibly fun for me. It's almost like a game. You gain experience from writing new code and learning new languages and frameworks. Once you level up, you can build something with those skills you've learned.
+
+.container-fluid
+	.row
+		- projects.each_with_index do |project, index|
+			.col-md-4
+				%a.project_links{href: project[1]}
+					.project_bg{style: "background-image: url(#{image_url('site' + index.to_s)})"}
+						.project
+							%h3=project[0]
+							%p=project[2]
+							%p Summary: #{project[3]}
