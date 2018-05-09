@@ -9,7 +9,7 @@
 		- projects.each_with_index do |project, index|
 			.col-md-4
 				%a.project_links{href: project[1]}
-					.project_bg{style: "background-image: url(#{image_url('site' + index.to_s)})"}
+					.project_bg{style: "background-image: url(#{image_url('site' + index.to_s + ".png")})"}
 						.project
 							%h3=project[0]
 							%p=project[2]
