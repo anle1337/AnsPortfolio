@@ -100,7 +100,7 @@ config.webpacker.check_yarn_integrity = false
     :port => "587",
     :domain => "gmail.com",
     :user_name => ENV["EMAIL_USERNAME"],
-    :password => ENV["EMAIL_USERNAME"],
+    :password => ENV["EMAIL_PASSWORD"],
     :authentication => "plain",
     :enable_starttls_auto => true
   }
